@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --root-bgcolor: #161823;
+    --text-color: #3EEDE7;
+    --bgcolor: #053154;
+    --welcome-text-color: #FFF;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --root-bgcolor: #f4fbf8;
+    --text-color: #006a60;
+    --bgcolor: #eff5f2;
+    --welcome-text-color: #000;
+  }
+}
