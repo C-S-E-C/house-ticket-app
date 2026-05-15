@@ -1,4 +1,5 @@
 // 原生 JavaScript 生成二维码
+var QR;
 (function() {
     // QR 码纠错等级
     const ErrorCorrectLevel = {
