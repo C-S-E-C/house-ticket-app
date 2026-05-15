@@ -1,6 +1,7 @@
 body {
     background-color: var(--bgcolor) !important;
 }
+
 #menu {
     bottom: 0;
     left: 0;
