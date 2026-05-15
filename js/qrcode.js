@@ -279,27 +279,6 @@ var QRCode;
 			this._elCanvas.style.display = "none";			
 		}
 		
-		// Android 2.1 bug workaround
-		// http://code.google.com/p/android/issues/detail?id=5141 
-		if (this._android != undefined && this._android <= 2.1) {
-	    	var factor = 1 / window.devicePixelRatio;
-	        var drawImage = CanvasRenderingContext2D.prototype.drawImage; 
-	    	CanvasRenderingContext2D.prototype.drawImage = function (image, sx, sy, sw, sh, dx, dy, dw, dh) {
-	    		if (("nodeName" in image) && /img/i.test(image.nodeName)) {
-		        	for (var i = arguments.length - 1; i >= 1; i--) {
-		            	arguments[i] = arguments[i] * factor;
-		        	}
-	    		} else if (typeof dw == "undefined") {
-	    			arguments[1] *= factor;
-	    			arguments[2] *= factor;
-	    			arguments[3] *= factor;
-	    			arguments[4] *= factor;
-	    		}
-	    		
-	        	drawImage.apply(this, arguments); 
-	    	};
-		}
-		
 		/**
 		 * Check whether the user's browser supports Data URI or not
 		 * 
