@@ -8,3 +8,7 @@ function menu_button(name, btn) {
         frame.src = `pages/${name}.html`;
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementsByTagName('button')[2].click();
+});
