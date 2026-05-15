@@ -1,4 +1,4 @@
-import { QR } from './qrcode.js';
+import QR from './qrcode.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('pass') != null) {
