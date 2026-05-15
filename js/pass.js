@@ -1,7 +1,12 @@
-import { QR } from './moudle.js';
+import { QR } from './qrcode.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('pass') != null) {
-        QR.generate('qrcode', localStorage.getItem('pass'), 250);
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://example.com",
+            width: 200,
+            height: 200,
+            correctLevel: QRCode.CorrectLevel.H
+        });
     }
 });
