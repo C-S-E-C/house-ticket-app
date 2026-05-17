@@ -1,0 +1,25 @@
+#pass {
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+}
+
+#pass div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+    background-color: var(--bgcolor);
+    border-radius: 30px;
+}
+
+#pass hr{
+    border: 2px dotted var(--bgcolor);
+    margin: 0;
+    width: 90%;
+    left: 5%;
+    position: relative;
+}
