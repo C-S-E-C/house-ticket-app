@@ -29,7 +29,7 @@ body {
     border: none;
     background-color: transparent;
     color: var(--text-color);
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     padding: 15px 20px;
     cursor: pointer;
@@ -43,6 +43,8 @@ body {
 
 #menu button svg {
     color: var(--text-color);
+    height: 75px;
+    width: 75px;
 }
 
 #menu button:hover {
