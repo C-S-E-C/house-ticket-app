@@ -18,9 +18,9 @@
 }
 
 #pass hr{
-    border: 2px dotted var(--bgcolor);
+    border: 7px dashed var(--bgcolor);
     margin: 0;
     width: 90%;
-    left: 5%;
+    left: 4.5%;
     position: relative;
 }
