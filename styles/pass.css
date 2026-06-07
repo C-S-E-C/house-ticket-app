@@ -4,6 +4,8 @@
     width: 80%;
     height: 90%;
     position: absolute;
+    font-weight: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #pass div{
@@ -23,4 +25,18 @@
     width: 90%;
     left: 4.5%;
     position: relative;
+}
+
+#pass h1{
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+#pass p{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
 }

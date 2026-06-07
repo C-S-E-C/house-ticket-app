@@ -1,6 +1,8 @@
-:root {
-  --root-bgcolor: #161823;
-  --text-color: #3EEDE7;
-  --bgcolor: #053154;
-  --welcome-text-color: #FFF;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --root-bgcolor: #121212;
+    --text-color: #FFF;
+    --bgcolor: #1E1E1E;
+    --formal-text-color: #FFF;
+  }
 }
